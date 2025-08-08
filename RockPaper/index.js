@@ -14,7 +14,7 @@ playerChoices.forEach(playerchoice=>{
         player.textContent ="Player : "+ (playerchoice.id.startsWith("rock")?"rock":playerchoice.id.startsWith("paper")?"paper":playerchoice.id.startsWith("scissors")?"scissors":"");
         if(playerchoice.id.startsWith(computerChoices)){
             result.style.color="black";
-            result.textContent="no one";
+            result.textContent="tie";
         }//
         else if(
              (playerchoice.id.startsWith("rock")&&(computerChoices==="scissors"))
@@ -23,7 +23,7 @@ playerChoices.forEach(playerchoice=>{
             ){
              playerGet++;
              result.style.color="green";
-             result.textContent="You Wan! 🥳";
+             result.textContent="You Won! 🥳";
         }//
         else{
             computerGet++;
